@@ -26,15 +26,6 @@ mongoose.connect(process.env.MONGO_URL,
 app.use('/api/auth', authRoute)
 app.use('/api/posts', postsRoute)
 
-// app.post('/api/auth', async (req, res) => {
-//     try {
-//         const { body } = req
-//     } catch (err) {
-//         console.log(err)
-//         res.send(err.message)
-//     }
-// })
-
 app.listen(port, () => {
     console.log(`Example app listening at http://localhost:${port}`)
 })
